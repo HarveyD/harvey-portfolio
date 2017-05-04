@@ -8,7 +8,9 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'echo hello'
+        sh '''ssh harveyd@harveyd.cloudapp.net
+touch test
+echo hi'''
       }
     }
   }
