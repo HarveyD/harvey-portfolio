@@ -8,7 +8,9 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh 'cat test | ssh harveyd.cloudapp.net'
+        sshagent(credentials: ['da3c3afa-ab14-4abf-88ff-d02d3e3571cf']){
+          sh '''ssh -v -oStrictHostKeyChecking=no harveyd@harveyd.cloudapp.net'''
+        }
       }
     }
   }
