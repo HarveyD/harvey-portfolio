@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sshagent(['da3c3afa-ab14-4abf-88ff-d02d3e3571cf']){
+        sshagent(['harveyd']){
           sh 'ssh -vv -oStrictHostKeyChecking=no harveyd@harveyd.cloudapp.net uname -a'
         }
       }
