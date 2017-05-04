@@ -8,9 +8,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        sh '''ssh harveyd@harveyd.cloudapp.net
-touch test
-echo hi'''
+        sh 'cat test | ssh harveyd.cloudapp.net'
       }
     }
   }
