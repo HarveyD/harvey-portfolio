@@ -29,7 +29,7 @@
             scrollTop: 0
         }, 500);
     });
-
+    
     // Scroll to first element
     $('#lead-down span').click(function() {
         var scrollDistance = $('#lead').next().offset().top;
