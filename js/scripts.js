@@ -69,7 +69,6 @@
                     $(this).addClass('vtimeline-content anu').wrap('<div data-icon="anu" class="vtimeline-point"><div class="vtimeline-block"></div></div>');
                     break;            
             }
-            //$(this).addClass('vtimeline-content').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
         });
 
         // Add icons to each block
@@ -85,8 +84,6 @@
                     $(this).prepend('<div class="vtimeline-icon anu-icon"></div>');
                     break;            
             }
-            //$(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
-            //$(this).prepend('<div class="vtimeline-icon cba-icon"></div>');
         });
 
         // Add dates to the timeline if exists
