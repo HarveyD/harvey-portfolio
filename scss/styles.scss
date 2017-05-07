@@ -436,8 +436,8 @@ footer {
 }
 
 .img-harvey {
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
     background-image: url('../images/harvey.jpg');
     background-size: cover;
     display: block;
@@ -807,6 +807,7 @@ footer {
     text-align: left;
 }
 
+/*
 .project-image {
     float: left;
 }
@@ -830,7 +831,7 @@ footer {
         margin: 0 0 15px 0;
         font-size: 0.9em;
     }
-}
+}*/
 
 /*
     -------------------------------
@@ -858,11 +859,6 @@ footer {
         display: inline-block;
         margin: 7px;
         padding: 5px 10px;
-        // color: $heading;
-        // background: darken($background-alt, 5%);
-        // list-style: none;
-        // cursor: default;
-        // font-size: 1.2em;
     }
 
     .skill {
@@ -871,11 +867,6 @@ footer {
         height: 128px;
         background: #fff;
         box-shadow: 0 10px 26px rgba(0,0,0,0.40), 0 8px 6px rgba(0,0,0,0.32);
-        // transition: all 0.3s cubic-bezier(.25, 0.8, 0.25, 1);
-
-    // .skill:hover {
-    //     box-shadow: 0 19px 38px rgba(0,0,0,0.40), 0 15px 12px rgba(0,0,0,0.32);
-    // }
 
         .img{
             height: 100%;
