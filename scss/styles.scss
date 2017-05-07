@@ -1,31 +1,7 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.1.3
-    Last Change: 03/25/17
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
+/* 
+    Okay you're looking at the css.
+    I can press f12 too.
 */
-/*
-    File Contents:
-
-        1. Variables
-        2. Mixins
-        3. Global Styles
-        4. Lead Styles
-        5. About Styles
-        6. Experience Styles
-        7. Education Styles
-        8. Project Styles
-        9. Skills Styles
-        10. Contact Styles
-        11. Media Queries
-*/
-
 /*
     ------------------------
     ----- 1. Variables -----
@@ -460,8 +436,8 @@ footer {
 }
 
 .img-harvey {
-    width: 350px;
-    height: 350px;
+    width: 25vw;
+    height: 25vw;
     background-image: url('../images/harvey.jpg');
     background-size: cover;
     display: block;
@@ -472,7 +448,7 @@ footer {
     -moz-border-radius: 50%;
 
     /* Border */
-    border: 10px solid $base-color;
+    border: 5px solid $base-color;
     -moz-border-radius: 50%;
     margin-bottom: 15px;
 }
@@ -524,6 +500,7 @@ footer {
 }
 
 .vtimeline-content {
+    box-shadow: 0 19px 28px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     margin-left: 350px;
     background: #fff;
     border: 1px solid #e6e6e6;
@@ -569,12 +546,12 @@ footer {
 
 .dod {
     background: #5B6770;
-    border: 2px solid #CF4520;
+    border: 2px solid #F5A36D;
     h3 {
         color: #C1C6C8;
     }
     h4 {
-        color: #CF4520;
+        color: #F5A36D;
     }
     p {
         color: #FFF;
@@ -630,7 +607,7 @@ footer {
     float: left;
     z-index: 99;
     margin-left: 275px;
-    border: 2px solid $base-color;
+    border: 3px solid $base-color;
     border-radius: 50%;
 }
 
@@ -680,6 +657,7 @@ footer {
 }
 
 .education-block {
+    box-shadow: 0 19px 28px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
@@ -690,16 +668,13 @@ footer {
         font-weight: 500;
         float: left;
         margin: 0;
-        color: $heading;
     }
 
     span {
-        color: $text;
         float: right;
     }
 
     h4 {
-        color: $text;
         clear: both;
         font-weight: 500;
         margin: 0 0 15px 0;
@@ -707,12 +682,39 @@ footer {
 
     p, ul {
         margin: 0;
-        color: $text;
         font-size: 0.9em;
     }
 
     ul {
         padding: 0 0 0 15px;
+    }
+}
+
+.anu-edu {
+    background: #ACC0C6;
+    border: 2px solid #333333;
+    h3, span{
+        color: #FFF;
+    }
+    h4 {
+        color: #333333;
+    }
+    p, ul {
+        color: #000000;
+    }
+}
+
+.dara-edu {
+    background: #d3d3d3;
+    border: 2px solid #F00;
+    h3, span{
+        color: #000;
+    }
+    h4 {
+        color: #F00;
+    }
+    p, ul {
+        color: #000;
     }
 }
 
@@ -735,11 +737,74 @@ footer {
 
 .project {
     position: relative;
-    max-width: 900px;
+    width: 100%;
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
-    border-radius: 4px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.40), 0 15px 12px rgba(0,0,0,0.32);
+}
+
+.proj-image{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.proj-description{
+    padding-top: 48px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.72);
+    color: #fff;
+    opacity: 0;
+
+    transition: opacity .3s, visibility .3s;
+
+    ul {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 800px;
+    }
+
+    li {
+        display: inline-block;
+        margin: 7px;
+        padding: 5px 10px;
+        color: $heading;
+        background: darken($background-alt, 5%);
+        list-style: none;
+        font-size: 1em;
+    }
+}
+
+.img-wrap:hover .proj-image{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.img-wrap:hover .proj-description{
+    visibility: visible;
+    opacity: 1;
+}
+
+.bar{
+    padding-left: 5px;
+    display: block;
+    position: relative;
+    height: 24px;
+    background-color: #ddd;
+    width: 100%;
+    z-index: 10;
+    text-align: left;
 }
 
 .project-image {
