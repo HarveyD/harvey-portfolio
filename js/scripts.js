@@ -58,12 +58,35 @@
 
         // Create each timeline block
         $userContent.each(function() {
-            $(this).addClass('vtimeline-content').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
+            switch($(this).data('style')){
+                case "cba":
+                    $(this).addClass('vtimeline-content cba').wrap('<div data-icon="cba" class="vtimeline-point"><div class="vtimeline-block"></div></div>');
+                    break;
+                case "dod":
+                    $(this).addClass('vtimeline-content dod').wrap('<div data-icon="dod" class="vtimeline-point"><div class="vtimeline-block"></div></div>');
+                    break;
+                case "anu":
+                    $(this).addClass('vtimeline-content anu').wrap('<div data-icon="anu" class="vtimeline-point"><div class="vtimeline-block"></div></div>');
+                    break;            
+            }
+            //$(this).addClass('vtimeline-content').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
         });
 
         // Add icons to each block
         $this.find('.vtimeline-point').each(function() {
-            $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
+            switch($(this).data('icon')){
+                case "cba":
+                    $(this).prepend('<div class="vtimeline-icon cba-icon"></div>');
+                    break;
+                case "dod":
+                    $(this).prepend('<div class="vtimeline-icon dod-icon"></div>');
+                    break;
+                case "anu":
+                    $(this).prepend('<div class="vtimeline-icon anu-icon"></div>');
+                    break;            
+            }
+            //$(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
+            //$(this).prepend('<div class="vtimeline-icon cba-icon"></div>');
         });
 
         // Add dates to the timeline if exists
