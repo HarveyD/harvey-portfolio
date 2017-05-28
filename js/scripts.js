@@ -86,7 +86,7 @@
 
     var iconList = ['html.png', 'css3.ico', 'sass.png', 'js.png', 'ts.png',
                     'react.ico', 'angular.png', 'nodejs.png', 'csharp.png',
-                    'java.png', 'mongodb.png', 'sql.png', 'git.svg', 'jenkins.png'];
+                    'java.png', 'mongodb.png', 'sql.png', 'git.svg', 'jenkins.png', 'webpack.png'];
     iconList.forEach(function(icon){
         $("#skillList").append('<li> \
                                     <div class="skill"> \
