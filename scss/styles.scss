@@ -891,8 +891,8 @@ footer {
 
     .skill {
         position: relative;
-        width: 128px;
-        height: 128px;
+        width: 96px;
+        height: 96px;
         background: #fff;
         box-shadow: 0 10px 26px rgba(0,0,0,0.40), 0 8px 6px rgba(0,0,0,0.32);
 
@@ -1088,10 +1088,36 @@ footer {
     }
 
     #about {
+        .img-harvey{
+            height: 184px;
+            width: 184px;
+        }
         text-align: center;
 
         p {
             text-align: left;
+            font-size: 20px;
+        }
+    }
+
+    #projects {
+
+        h3{
+            font-size: 24px;
+        }
+
+        h4{
+            font-size: 20px;
+        }
+        
+        p{
+            font-size: 16px;
+        }
+
+        .proj-description{
+            h3{
+                font-size: 16px;
+            }
         }
     }
 
