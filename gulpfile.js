@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var htmlmin = require('gulp-htmlmin');
 var plumber = require('gulp-plumber');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
@@ -33,7 +34,14 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('css'));
 });
 
+gulp.task('html', function() {
+  return gulp.src('*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('watch', ['scripts', 'styles'], function() {
     gulp.watch('js/*.js', ['scripts']);
     gulp.watch('scss/*.scss', ['styles']);
+    gulp.watch('*.html', ['html']);
 });
