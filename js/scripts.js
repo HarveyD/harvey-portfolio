@@ -1,5 +1,4 @@
 (function($) {
-
     // Remove no-js class
     $('html').removeClass('no-js');
 
@@ -38,7 +37,9 @@
         }, 500);
     });
 
-    // Create timeline
+    /**
+     * Work Experience
+     */
     $('#experience-timeline').each(function() {
 
         $this = $(this); // Store reference to this
@@ -81,18 +82,111 @@
                 $(this).parent().prepend('<span class="vtimeline-date">'+date+'</span>');
             }
         });
-
     });
 
-    var iconList = ['html.png', 'css3.ico', 'sass.png', 'js.png', 'ts.png',
-                    'react.png', 'angular.png', 'nodejs.png', 'cs.png',
-                    'java.png', 'mongodb.png', 'sql.png', 'git.svg', 'jenkins.png', 'webpack.png'];
-    iconList.forEach(function(icon){
-        $("#skillList").append('<li> \
-                                    <div class="skill"> \
-                                        <img class="img" src="images/' + icon + '"/> \
-                                    </div> \
-                                </li>')
+    /**
+     * PROJECTS
+     */
+    var projectList = [
+        { 
+            title: 'Repeat After Me', 
+            img: 'ram.png', 
+            url: 'https://www.harveydelaney.com/repeatafterme',
+            desc: 'A simple Simon Says clone made using HTML5 Canvas + Typescript',
+            tech: ['JavaScript', 'TypeScript', 'Webpack', 'HTML5 Canvas']
+        },
+        { 
+            title: 'SpookEm', 
+            img: 'spookem.png', 
+            url: 'https://www.harveydelaney.com/repeatafterme',
+            desc: 'A tile based horror/survival game made using Processing/Java.',
+            tech: ['Java', 'Processing', 'Path Finding Algorithms']
+        },
+        { 
+            title: 'Compounding Savings', 
+            img: 'compounding-savings.png', 
+            url: 'https://www.harveydelaney.com/compounding-savings',
+            desc: 'A web application aimed at informing the potential compounding interest benefits from not buying non-essential items.',
+            tech: ['React', 'Redux', 'Sass', 'Webpack']
+        },
+        { 
+            title: 'PooPlot', 
+            img: 'pooplot.png', 
+            url: 'https://www.harveydelaney.com/compounding-savings',
+            desc: 'A hybrid mobile application to help people track, view and share poops.',
+            tech: ['Angular 4', 'Ionic 3', 'Android', 'NodeJS', 'MongoDB']
+        }
+    ];
+
+    projectList.forEach(function(project, index) {
+        if (index % 2 === 0 || index === 0) {
+            $("#projects .container").append(
+                '</div> \
+                <div class="row">'
+            );
+        }
+
+        $("#projects .container").append(
+           '<div class="col-md-6"> \
+                <div class="project shadow-large"> \
+                    <div class="bar"> \
+                        <i class="left fa fa-circle" style="color:red"></i> \
+                        <i class="left fa fa-circle" style="color:yellow"></i> \
+                        <i class="left fa fa-circle" style="color:lawngreen"></i> \
+                        <span class="center"> ' + project.title + '</span> \
+                    </div> \
+                    <a href="' + project.url + '"> \
+                        <div class="img-wrap"> \
+                            <img class="proj-image" src="images/' + project.img +'"/> \
+                            <div class="proj-description"> \
+                                <div class="col-md-8 col-md-offset-2"> \
+                                    <h3>' + project.desc +'</h3> \
+                                    <ul id="proj-tech-' + index +'"> \
+                                    <ul> \
+                                </div> \
+                            </div> \
+                        </div> \
+                    </a> \
+                </div> \
+            </div>'
+        );
+
+        project.tech.forEach(function(tech) {
+            $('#proj-tech-' + index).append(
+                '<li>' + tech + '</li>'
+            );
+        });
+    });
+
+    /**
+     * SKILLS
+     */
+    var iconList = [
+        {name: 'html', extension: 'png'},
+        {name: 'css3', extension: 'ico'},
+        {name: 'sass', extension: 'png'},
+        {name: 'js', extension: 'png'},
+        {name: 'ts', extension: 'png'},
+        {name: 'react', extension: 'png'},
+        {name: 'angular', extension: 'png'},
+        {name: 'nodejs', extension: 'png'},
+        {name: 'cs', extension: 'png'},
+        {name: 'java', extension: 'png'},
+        {name: 'mongodb', extension: 'png'},
+        {name: 'sql', extension: 'png'},
+        {name: 'git', extension: 'svg'},
+        {name: 'jenkins', extension: 'png'},
+        {name: 'webpack', extension: 'png'}
+    ]
+
+    var timeout = 0;
+    iconList.forEach(function(icon) {
+        $("#skillList").append(
+            '<li> \
+                <div id="'+ icon.name + '" class="skill"> \
+                    <img class="img" src="images/' + icon.name + '.' + icon.extension + '"/> \
+                </div> \
+            </li>');
     });
 
     // Open mobile menu

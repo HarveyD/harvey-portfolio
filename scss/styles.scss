@@ -523,7 +523,6 @@ footer {
 }
 
 .vtimeline-content {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.30), 0 12px 8px rgba(0,0,0,0.22);
     margin-left: 350px;
     background: #fff;
     border: 1px solid #e6e6e6;
@@ -598,7 +597,6 @@ footer {
 .vtimeline-point {
     position: relative;
     display: block;
-    vertical-align: top;
     margin-bottom: 30px;
 }
 
@@ -681,7 +679,6 @@ footer {
 }
 
 .education-block {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.30), 0 12px 8px rgba(0,0,0,0.22);
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
@@ -765,7 +762,6 @@ footer {
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
-    box-shadow: 0 19px 28px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .proj-image{
@@ -832,32 +828,6 @@ footer {
 }
 
 /*
-.project-image {
-    float: left;
-}
-
-.project-info {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 300px;
-    padding: 15px;
-
-    h3 {
-        font-size: 1.5em;
-        font-weight: 300;
-        color: $heading;
-        margin: 0 0 15px 0;
-    }
-
-    p {
-        color: $text;
-        margin: 0 0 15px 0;
-        font-size: 0.9em;
-    }
-}*/
-
-/*
     -------------------------------
     ----- 9. Skills Styles -----
     -------------------------------
@@ -889,12 +859,16 @@ footer {
         padding: 5px 10px;
     }
 
+    .animated {
+        -webkit-animation: bounce 3s infinite alternate;
+        animation: bounce 3s infinite alternate;
+    }
+
     .skill {
         position: relative;
         width: 96px;
         height: 96px;
         background: #fff;
-        box-shadow: 0 10px 26px rgba(0,0,0,0.40), 0 8px 6px rgba(0,0,0,0.32);
 
         .img{
             height: 100%;
@@ -907,8 +881,6 @@ footer {
         }
     }
 }
-
-
 
 /*
     -------------------------------
