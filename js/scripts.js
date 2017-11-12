@@ -92,8 +92,15 @@
             title: 'Crypto Coaster', 
             img: 'crypto-coaster.jpg', 
             url: 'https://www.harveydelaney.com/crypto-coaster',
-            desc: 'A simple web app that reacts to crypto currency price changes.',
+            desc: 'A simple web app that provides real time updates to cryptocurrency prices using their respective mascots.',
             tech: ['JavaScript', 'Web Sockets', 'JQuery']
+        },
+        { 
+            title: 'Reddit Sentiment Analyser', 
+            img: 'reddit-sa.png', 
+            url: 'https://www.harveydelaney.com/reddit-sa',
+            desc: 'Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread.',
+            tech: ['JavaScript', 'Sass', 'Browserify', 'JQuery', 'NodeJS']
         },
         { 
             title: 'Compounding Savings', 
@@ -129,7 +136,7 @@
             url: 'https://www.harveydelaney.com/',
             desc: 'A tile based horror/survival game made using Processing/Java. (Demo not available)',
             tech: ['Java', 'Processing', 'Path Finding Algorithms']
-        },
+        }
     ];
 
     projectList.forEach(function(project, index) {
