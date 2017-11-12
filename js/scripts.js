@@ -126,8 +126,8 @@
         { 
             title: 'SpookEm', 
             img: 'spookem.png', 
-            url: 'https://www.harveydelaney.com/repeatafterme',
-            desc: 'A tile based horror/survival game made using Processing/Java.',
+            url: 'https://www.harveydelaney.com/',
+            desc: 'A tile based horror/survival game made using Processing/Java. (Demo not available)',
             tech: ['Java', 'Processing', 'Path Finding Algorithms']
         },
     ];
@@ -153,7 +153,8 @@
                         <div class="img-wrap"> \
                             <img class="proj-image" src="images/' + project.img +'"/> \
                             <div class="proj-description"> \
-                                <div class="col-md-8 col-md-offset-2"> \
+                                <div class="text-container"> \
+                                    <h1>' + project.title + '\
                                     <h3>' + project.desc +'</h3> \
                                     <ul id="proj-tech-' + index +'"> \
                                     <ul> \
