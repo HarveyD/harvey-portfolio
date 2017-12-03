@@ -1185,6 +1185,14 @@ footer {
         }
     }
 
+    #projects {
+        .container,
+        .col-md-6 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
     .project-image {
         display: none;
     }
