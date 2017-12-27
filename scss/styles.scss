@@ -1110,22 +1110,31 @@ footer {
     }
 
     #projects {
-
-        h3{
+        h3 {
             font-size: 24px;
         }
 
-        h4{
+        h4 {
             font-size: 20px;
         }
         
-        p{
+        p {
             font-size: 16px;
         }
 
         .proj-description{
-            h3{
-                font-size: 16px;
+            h1 {
+                font-size: 24px;
+            }
+
+            h3 {
+                margin-left: 10%;
+                margin-right: 10%;
+                font-size: 12px;
+            }
+
+            li {
+                font-size: 0.65em;
             }
         }
     }
