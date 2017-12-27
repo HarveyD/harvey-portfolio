@@ -510,7 +510,7 @@ footer {
     text-align: left;
 
     h3 {
-        font-size: 1.5em;
+        font-size: 1.35em;
         font-weight: 400;
         color: $heading;
         display: inline-block;
@@ -530,48 +530,6 @@ footer {
         margin: 0;
     }
 }
-
-// .cba {
-//     background: #FFCC00;
-//     border: 2px solid #9B9BBC;
-//     h3 {
-//         color: #000000;
-//     }
-//     h4 {
-//         color: #9B9BBC;
-//     }
-//     p {
-//         color: #FFFFFF;
-//     }
-// }
-
-// .dod {
-//     background: #5B6770;
-//     border: 2px solid #F5A36D;
-//     h3 {
-//         color: #C1C6C8;
-//     }
-//     h4 {
-//         color: #F5A36D;
-//     }
-//     p {
-//         color: #FFF;
-//     }
-// }
-
-// .anu {
-//     background: #ACC0C6;
-//     border: 2px solid #333333;
-//     h3 {
-//         color: #FFF;
-//     }
-//     h4 {
-//         color: #333333;
-//     }
-//     p {
-//         color: #000000;
-//     }
-// }
 
 .vtimeline-point {
     position: relative;
@@ -633,7 +591,10 @@ footer {
     h2 {
         color: $heading;
         margin-bottom: 50px;
-        font-weight: 400;
+    }
+
+    h3 {
+      font-weight: 400;
     }
 
     h4 {
