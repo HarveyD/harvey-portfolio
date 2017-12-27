@@ -184,31 +184,36 @@
      * SKILLS
      */
     var iconList = [
-        {name: 'html', extension: 'png'},
-        {name: 'css3', extension: 'ico'},
-        {name: 'sass', extension: 'png'},
-        {name: 'js', extension: 'png'},
-        {name: 'ts', extension: 'png'},
-        {name: 'react', extension: 'png'},
-        {name: 'angular', extension: 'png'},
-        {name: 'nodejs', extension: 'png'},
-        {name: 'cs', extension: 'png'},
-        {name: 'java', extension: 'png'},
-        {name: 'mongodb', extension: 'png'},
-        {name: 'sql', extension: 'png'},
-        {name: 'git', extension: 'svg'},
-        {name: 'jenkins', extension: 'png'},
-        {name: 'webpack', extension: 'png'}
+        { name: 'html5', description: 'HTML 5'},
+        { name: 'css3', description: 'CSS 3' },
+        { name: 'sass', description: 'Sass'},
+        { name: 'javascript', description: 'JavaScript' },
+        { name: 'typescript', description: 'TypeScript'},
+        { name: 'jquery', description: 'JQuery'},
+        { name: 'react', description: 'React' },
+        { name: 'angularjs', description: 'Angular 2+'},
+        { name: 'nodejs', description: 'Node'},
+        { name: 'webpack', description: 'Webpack'},
+        { name: 'jasmine', description: 'Jasmine'},
+        { name: 'grunt', description: 'Grunt'},
+        { name: 'gulp', description: 'Gulp'},
+        { name: 'csharp', description: 'C#' },
+        { name: 'java', description: 'Java' },
+        { name: 'mongodb', description: 'MongoDB'},
+        { name: 'postgresql', description: 'PostgreSQL'},
+        { name: 'git', description: 'Git'},
+        { name: 'nginx', description: 'Nginx'},
+        { name: 'visualstudio', description: 'Visual Studio'}
+        // { name: 'jenkins', extension: 'png'},
     ]
 
     var timeout = 0;
     iconList.forEach(function(icon) {
         $("#skillList").append(
-            '<li> \
-                <div id="'+ icon.name + '" class="skill"> \
-                    <img class="img" src="images/' + icon.name + '.' + icon.extension + '"/> \
-                </div> \
-            </li>');
+        '<li> \
+            <i class="devicon-' + icon.name + '-plain"></i> \
+            <span>' + icon.description + '</span> \
+        </li>');
     });
 
     // Open mobile menu
