@@ -14,7 +14,7 @@
 
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 1);
+        }, (Math.abs(window.pageYOffset - $(heading).offset().top) / 1) / 6);
 
         // Hide the menu once clicked if mobile
         if ($('header').hasClass('active')) {
@@ -26,7 +26,7 @@
     $('#to-top').click(function() {
         $('html, body').animate({
             scrollTop: 0
-        }, 500);
+        }, 250);
     });
     
     // Scroll to first element
@@ -34,7 +34,7 @@
         var scrollDistance = $('#lead').next().offset().top;
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, 500);
+        }, 250);
     });
 
     /**
@@ -49,13 +49,13 @@
         $userContent.each(function() {
             switch($(this).data('style')){
                 case "cba":
-                    $(this).addClass('vtimeline-content cba').wrap('<div data-icon="cba" class="vtimeline-point"><div class="vtimeline-block"></div></div>');
+                    $(this).addClass('vtimeline-content').wrap('<div data-icon="cba" class="vtimeline-point"><div class="vtimeline-block"></div></div>');
                     break;
                 case "dod":
-                    $(this).addClass('vtimeline-content dod').wrap('<div data-icon="dod" class="vtimeline-point"><div class="vtimeline-block"></div></div>');
+                    $(this).addClass('vtimeline-content').wrap('<div data-icon="dod" class="vtimeline-point"><div class="vtimeline-block"></div></div>');
                     break;
                 case "anu":
-                    $(this).addClass('vtimeline-content anu').wrap('<div data-icon="anu" class="vtimeline-point"><div class="vtimeline-block"></div></div>');
+                    $(this).addClass('vtimeline-content').wrap('<div data-icon="anu" class="vtimeline-point"><div class="vtimeline-block"></div></div>');
                     break;            
             }
         });
@@ -112,7 +112,7 @@
         { 
             title: 'PooPlot', 
             img: 'pooplot.png', 
-            url: 'https://www.harveydelaney.com/compounding-savings',
+            url: 'https://www.harveydelaney.com/pooplot',
             desc: 'A hybrid mobile application to help people track, view and share poops.',
             tech: ['Angular 4', 'Ionic 3', 'Android', 'NodeJS', 'MongoDB']
         },
