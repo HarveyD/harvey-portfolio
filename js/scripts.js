@@ -158,7 +158,7 @@
                     </div> \
                     <a href="' + project.url + '"> \
                         <div class="img-wrap"> \
-                            <img class="proj-image" src="images/' + project.img +'"/> \
+                            <img class="proj-image" src="images/' + project.img +'" alt="Harvey Delaney\'s ' + project.title + ' Project"/> \
                             <div class="proj-description"> \
                                 <div class="text-container"> \
                                     <h1>' + project.title + '\
