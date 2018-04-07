@@ -23,7 +23,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('styles', function () {
-	return gulp.src('scss/styles.scss')
+	return gulp.src('src/scss/styles.scss')
 		.pipe(plumber(plumber({
 			errorHandler: function (err) {
 				console.log(err);
