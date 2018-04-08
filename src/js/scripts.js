@@ -97,14 +97,14 @@
         },
         { 
             title: 'Reddit Sentiment Analyser', 
-            img: 'reddit-sa.png', 
+            img: 'reddit-sa.jpg', 
             url: 'https://www.harveydelaney.com/reddit-sa',
             desc: 'Allows users to easily and quickly get a summary of the overall positive and negative sentiment of a comment thread.',
             tech: ['JavaScript', 'Sass', 'Browserify', 'JQuery', 'NodeJS']
         },
         { 
             title: 'Compounding Savings', 
-            img: 'compounding-savings.png', 
+            img: 'compounding-savings.jpg', 
             url: 'https://www.harveydelaney.com/compounding-savings',
             desc: 'A web application aimed at informing the potential compounding interest benefits from not buying non-essential items.',
             tech: ['React', 'Redux', 'Sass', 'Webpack']
@@ -125,7 +125,7 @@
         },
         { 
             title: 'Repeat After Me', 
-            img: 'ram.png', 
+            img: 'repeat-after-me.jpg', 
             url: 'https://www.harveydelaney.com/repeatafterme',
             desc: 'A simple Simon Says clone made using HTML5 Canvas + Typescript',
             tech: ['JavaScript', 'TypeScript', 'Webpack', 'HTML5 Canvas']
