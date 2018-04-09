@@ -111,7 +111,7 @@
         },
         { 
             title: 'PooPlot', 
-            img: 'pooplot.png', 
+            img: 'pooplot.jpg', 
             url: 'https://www.harveydelaney.com/pooplot',
             desc: 'A hybrid mobile application to help people track, view and share poops.',
             tech: ['Angular 4', 'Ionic 3', 'Android', 'NodeJS', 'MongoDB']
