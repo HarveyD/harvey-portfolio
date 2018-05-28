@@ -120,8 +120,15 @@
             title: 'Bruce Hall VR', 
             img: 'bruce-hall-vr.jpg', 
             url: 'https://www.harveydelaney.com/bruce-hall-vr',
-            desc: 'A simple tour of the old Bruce Hall before being knocked down - (project in progress)',
+            desc: 'A simple tour of the old Bruce Hall before being knocked down. PROJECT DISABLED',
             tech: ['JavaScript', 'JQuery', 'Pannellum']
+        },
+        { 
+            title: 'Bruce Hall VR 2', 
+            img: 'bruce-hall-vr-2.jpg', 
+            url: 'https://github.com/HarveyD/bruce-hall-vr-2',
+            desc: 'Second iteration of the Bruce Hall VR project written in React',
+            tech: ['React', 'Pannellum']
         },
         { 
             title: 'Repeat After Me', 
@@ -156,7 +163,7 @@
                         <i class="left fa fa-circle" style="color:lawngreen"></i> \
                         <span class="center"> ' + project.title + '</span> \
                     </div> \
-                    <a href="' + project.url + '"> \
+                    <a target="_blank" href="' + project.url + '"> \
                         <div class="img-wrap"> \
                             <img class="proj-image" src="images/' + project.img +'" alt="Harvey Delaney\'s ' + project.title + ' Project"/> \
                             <div class="proj-description"> \
