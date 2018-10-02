@@ -197,7 +197,6 @@
     { name: 'git', description: 'Git' },
     { name: 'nginx', description: 'Nginx' },
     { name: 'visualstudio', description: 'Visual Studio' }
-    // { name: 'jenkins', extension: 'png'},
   ]
 
   var timeout = 0;
